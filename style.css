@@ -61,6 +61,7 @@ div {
 .btn {
   padding: 1rem;
   border: none;
+  border-radius: 8px;
   font-size: 0.7rem;
   margin: 0 0.5rem 0 0;
 }
