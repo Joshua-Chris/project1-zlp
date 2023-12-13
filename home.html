@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Author Energy Limited</title>
     <link rel="icon" href="images/hero-icon.png" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <div class="main__container">
       <header>
         <div class="container">
           <h2 class="logo">AEL TECH</h2>
-          <nav>
+          <nav class="desktop__menu">
             <a href="#" class="nav__menu">Home</a>
             <a href="#" class="nav__menu">Platform</a>
             <a href="#" class="nav__menu">Plans</a>
@@ -20,13 +20,39 @@
             <a href="#" class="nav__menu">Blog</a>
             <a href="#" class="nav__menu">Contact</a>
           </nav>
-          <button class="btn btn__primary">Request a demo</button>
+          <button class="desktop__btn btn__primary">Request a demo</button>
+
+          <!-- mobile menu -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 9h16.5m-16.5 6.75h16.5"
+            />
+          </svg>
+          <nav class="mobile__menu">
+            <a href="#" class="nav__menu">Home</a>
+            <a href="#" class="nav__menu">Platform</a>
+            <a href="#" class="nav__menu">Plans</a>
+            <a href="#" class="nav__menu">Solution</a>
+            <a href="#" class="nav__menu">Blog</a>
+            <a href="#" class="nav__menu">Contact</a>
+          </nav>
+          <button class="mobile__btn btn__primary">Request a demo</button>
+          <!-- end of mobile menu -->
         </div>
       </header>
       <section class="hero__section">
         <div class="container">
-          <div class="hero hero__left">
-            <a>SMART FINANCE</a>
+          <div class="hero__left">
+            <a class="btn__ash">SMART FINANCE</a>
             <h1>The Future Analytics of Strategic Finance</h1>
             <p>
               "Finance manages money, investments, and assets for individuals
@@ -34,8 +60,8 @@
               distribution worldwide."
             </p>
             <div class="flex hero__btn">
-              <button class="btn btn__primary">Get Started</button>
-              <button class="btn btn__secondary flex">
+              <button class="btn__primary">Get Started</button>
+              <button class="btn__secondary flex">
                 <svg
                   style="width: 0.5rem; margin-right: 0.3rem"
                   xmlns="http://www.w3.org/2000/svg"
@@ -73,7 +99,7 @@
                   />
                 </svg>
               </div>
-              <div class="testimonial">
+              <div class="btn__ash testimonial">
                 <h2>
                   Finance: managing money, investments, and economic activities
                   strategically. Facilis?
@@ -82,7 +108,7 @@
               </div>
             </div>
           </div>
-          <div class="hero hero__right">
+          <div class="hero__right">
             <img
               src="images/hero-image.jpg"
               alt="hero image"

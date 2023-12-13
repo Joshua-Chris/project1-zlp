@@ -1,0 +1,88 @@
+@use '../../base/variables' as baseVars;
+
+.hero__section {
+  .container {
+    padding: 2rem 4rem;
+
+    .hero__left {
+      a {
+        font-weight: bold;
+      }
+      h1 {
+        font-size: 2.3rem;
+      }
+      p {
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+        color: baseVars.$text-color;
+      }
+      .hero__testimonial {
+        margin: 1rem 0;
+
+        .avatar {
+          margin-right: 1rem;
+          img {
+            border-radius: 50%;
+          }
+        }
+
+        .testimonial {
+          width: 10rem;
+          h2,
+          p {
+            font-size: 0.7rem;
+          }
+          p {
+            color: baseVars.$text-color;
+          }
+        }
+      }
+    }
+
+    .hero__left,
+    .hero__right {
+      width: 50%;
+      padding: 1rem;
+    }
+  }
+}
+
+// mobile
+@media only screen and (max-width: 600px) {
+  .hero__section {
+    .container {
+      flex-direction: column;
+      padding: 2rem 3rem;
+
+      .hero__left {
+        .hero__testimonial {
+          margin: 1rem 0;
+
+          .avatar {
+            margin-right: 1rem;
+            img {
+              border-radius: 50%;
+            }
+          }
+
+          .testimonial {
+            width: 20rem;
+            h2,
+            p {
+              font-size: 0.9rem;
+            }
+            p {
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
+
+      .hero__left,
+      .hero__right {
+        width: 100%;
+        padding: 1rem;
+      }
+    }
+  }
+}
