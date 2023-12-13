@@ -1,0 +1,28 @@
+@use '../../base/variables' as baseVars;
+
+%btn {
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  margin: 0 0.5rem 0 0;
+  cursor: pointer;
+  box-shadow: baseVars.$box-shadow;
+}
+
+.btn__primary {
+  @extend %btn;
+  background: baseVars.$primary-color;
+  color: baseVars.$secondary-color;
+}
+.btn__secondary {
+  @extend %btn;
+  background: baseVars.$secondary-color;
+  color: baseVars.$primary-color;
+}
+.btn__ash {
+  background: baseVars.$box-color;
+  font-size: 0.9rem;
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.5rem;
+}

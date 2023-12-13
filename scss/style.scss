@@ -1,0 +1,25 @@
+// SCSS Modules
+@use 'base/variables' as baseVars;
+@use 'components/Buttons/buttons';
+@use 'components/Header/header';
+@use 'app/Home/Hero';
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: baseVars.$font-stack;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container {
+  display: flex;
+}

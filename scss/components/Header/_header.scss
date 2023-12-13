@@ -1,0 +1,43 @@
+@use '../../base/variables' as baseVars;
+
+// desktop
+
+header {
+  .container {
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+    .desktop__menu {
+      a {
+        text-decoration: none;
+        color: baseVars.$primary-color;
+        padding: 0.5rem 0.7rem;
+        font-size: 0.9rem;
+      }
+    }
+    .mobile__menu,
+    .mobile__btn,
+    svg {
+      display: none;
+    }
+  }
+}
+
+// mobile
+@media only screen and (max-width: 600px) {
+  header {
+    .container {
+      h2 {
+        font-size: 1rem;
+      }
+      .desktop__menu,
+      .desktop__btn {
+        display: none;
+      }
+      svg {
+        display: block;
+        width: 4rem;
+      }
+    }
+  }
+}
