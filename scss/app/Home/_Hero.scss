@@ -52,7 +52,8 @@
   .hero__section {
     .container {
       flex-direction: column;
-      padding: 2rem 3rem;
+      padding: 2rem;
+      margin: 0;
 
       .hero__left {
         .hero__testimonial {
@@ -82,6 +83,12 @@
       .hero__right {
         width: 100%;
         padding: 1rem;
+      }
+
+      .hero__right {
+        img {
+          height: 300px;
+        }
       }
     }
   }

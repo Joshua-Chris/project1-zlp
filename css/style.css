@@ -43,6 +43,10 @@ header .container svg {
 }
 
 @media only screen and (max-width: 600px) {
+  header .container {
+    justify-content: space-between;
+    padding: 1rem 3rem;
+  }
   header .container h2 {
     font-size: 1rem;
   }
@@ -97,7 +101,8 @@ header .container svg {
 @media only screen and (max-width: 600px) {
   .hero__section .container {
     flex-direction: column;
-    padding: 2rem 3rem;
+    padding: 2rem;
+    margin: 0;
   }
   .hero__section .container .hero__left .hero__testimonial {
     margin: 1rem 0;
@@ -122,6 +127,9 @@ header .container svg {
   .hero__section .container .hero__right {
     width: 100%;
     padding: 1rem;
+  }
+  .hero__section .container .hero__right img {
+    height: 300px;
   }
 }
 body {
